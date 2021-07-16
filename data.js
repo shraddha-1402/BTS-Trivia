@@ -1,100 +1,100 @@
 var questions = [
   [
     {
-      question: "\n\nHow many tracks does Namjoon's first mixtape have? ",
+      question: "How many tracks does Namjoon's first mixtape have?",
       options: [
         "7",
         "8",
         "10",
         "11"
       ],
-      answer: "4"
+      answer: 3
     },
     {
-      question: "Which track on RM's mixtape mono was produced by Honne? ",
+      question: "Which track on RM's mixtape mono was produced by Honne?",
       options: [
         "uhgood",
         "everythingoes",
         "seoul",
         "forever rain",
       ],
-      answer: "3"
+      answer: 2
     },
     {
-      question: "What's Namjoon's native place? Or where is Namjoon from?  ",
+      question: "What's Namjoon's native place? Or where is Namjoon from?",
       options: [
         "Seoul",
         "Ilsan",
         "Daegu",
         "Gwangju",
       ],
-      answer: "2"
+      answer: 1
     },
     {
-      question: " what's the name of his 1st mixtape? ",
+      question: "What's the name of his 1st mixtape?",
       options: [
         "Mono",
         "D2",
         "RM",
         "Rap Monster",
       ],
-      answer: "3"
+      answer: 2
     },
   ],
   [
     {
-      question: "\n\nWhat is the name of the BT21 character made by Jin? ",
+      question: "What is the name of the BT21 character made by Jin?",
       options: [
         "RG",
         "RJ",
         "RV",
         "RQ",
       ],
-      answer: "2"
+      answer: 1
     },
   ],
   [
     {
-      question: "\n\nYoongi released his 2nd mixtape in which year? ",
+      question: "Yoongi released his 2nd mixtape in which year?",
       options: [
         "2019",
         "2020",
         "2018",
         "2021",
       ],
-      answer: "2"
+      answer: 1
     },
     {
-      question: "Which of the following female artists has Yoongi not collabed with? ",
+      question: "Which of the following female artists has Yoongi not collabed with?",
       options: [
         "Halsey",
         "IU",
         "Ailee",
         "Suran",
       ],
-      answer: "3"
+      answer: 2
     },
     {
-      question: "What is the name of the last track on Agust D mixtape? ",
+      question: "What is the name of the last track on Agust D mixtape?",
       options: [
         "give it to me",
         "The last",
         "so far away ",
         "Tony Montana",
       ],
-      answer: "3"
+      answer: 2
     },
   ],
   [
     {
-      question: "\n\nWhat album does Hobi have 2 solo songs? ",
+      question: "What album does Hobi have 2 solo songs? ",
       options: [
         "HYYH pt 1",
         "Wings",
         "MOTS7",
         "LY : Answer",
       ],
-      answer: "2"
+      answer: 1
     },
     {
       question: "What's name of Hobi's dog?",
@@ -109,26 +109,26 @@ var questions = [
   ],
   [
     {
-      question: "\n\nJimin had his famous Orange colour hair during which era? ",
+      question: "Jimin had his famous Orange colour hair during which era? ",
       options: [
         "I Need U",
         "DNA",
         "Run",
         "Spring Day",
       ],
-      answer: "3"
+      answer: 2
     },
   ],
   [
     {
-      question: "\n\nTaehyung's song 'Sweet Night' is an OST from which kdrama? ",
+      question: "Taehyung's song 'Sweet Night' is an OST from which kdrama? ",
       options: [
         "It's okay to not be okay ",
         "Vincenzo",
         "Itaewon Class",
         "True Beauty",
       ],
-      answer: "3"
+      answer: 2
     },
     {
       question: "What is the name of Taehyung's character in Hwarang? ",
@@ -138,7 +138,7 @@ var questions = [
         "Han-sung",
         "Moo-myung",
       ],
-      answer: "3"
+      answer: 2
     },
     {
       question: "In Go Go Halloween dance practice video, what character did Taehyung dress up as? ",
@@ -148,32 +148,12 @@ var questions = [
         "Naruto",
         "Joker",
       ],
-      answer: "2"
-    },
-    {
-      question: "Do i have siblings? ",
-      options: [
-        "option1",
-        "option2",
-        "option3",
-        "option4",
-      ],
-      answer: "YES"
-    },
-    {
-      question: "What is my sibling's name? ",
-      options: [
-        "option1",
-        "option2",
-        "option3",
-        "option4",
-      ],
-      answer: "Kim Eun Jin"
+      answer: 1
     },
   ],
   [
     {
-      question: "\n\nWhat is my name? ",
+      question: "What is my name? ",
       options: [
         "option1",
         "option2",
@@ -225,4 +205,80 @@ var questions = [
   ]
 ];
 
-module.exports = { questions };
+var highScore = [
+  [
+    {
+      name: "Shraddha",
+      score: 18
+    },
+    {
+      name: "Keith",
+      score: 9
+    }
+  ],
+  [
+    {
+      name: "Shraddha",
+      score: 18
+    },
+    {
+      name: "Keith",
+      score: 9
+    }
+  ],
+  [
+    {
+      name: "Shraddha",
+      score: 18
+    },
+    {
+      name: "Keith",
+      score: 9
+    }
+  ],
+  [
+    {
+      name: "Shraddha",
+      score: 18
+    },
+    {
+      name: "Keith",
+      score: 9
+    }
+  ],
+  [
+    {
+      name: "Shraddha",
+      score: 18
+    },
+    {
+      name: "Keith",
+      score: 9
+    }
+  ],
+  [
+    {
+      name: "Shraddha",
+      score: 18
+    },
+    {
+      name: "Keith",
+      score: 9
+    }
+  ],
+  [
+    {
+      name: "Shraddha",
+      score: 18
+    },
+    {
+      name: "Keith",
+      score: 9
+    }
+  ],
+];
+
+var members = ['Kim Namjoon', 'Kim Seokjin', 'Min Yoongi', 'Jung Hoseok', 'Park Jimin', 'Kim Taehyung', 'Jeon Jungkook'];
+
+
+module.exports = { questions, highScore, members };
