@@ -52,6 +52,16 @@ var questions = [
       ],
       answer: 1
     },
+    {
+      question: "Epiphany music video was released as a comeback trailer for which BTS album?",
+      options: [
+        "You never walk alone",
+        "Love yourself : Tear",
+        "Love yourself : Her",
+        "Love yourself : Answer",
+      ],
+      answer: 3
+    },
   ],
   [
     {
@@ -87,6 +97,16 @@ var questions = [
   ],
   [
     {
+      question: "What is the name of the second single from Hobi's mixtape Hope World?",
+      options: [
+        "Daydream",
+        "Base line",
+        "Airplane",
+        "Blue Side",
+      ],
+      answer: 2
+    },
+    {
       question: "What album does Hobi have 2 solo songs? ",
       options: [
         "HYYH pt 1",
@@ -118,8 +138,28 @@ var questions = [
       ],
       answer: 2
     },
+    {
+      question: "What genre is Jimin's solo song Serendipity?",
+      options: [
+        "Contemporary R&B",
+        "Alternative R&B",
+        "Latin R&B",
+        "Neo Soul",
+      ],
+      answer: 1
+    },
   ],
   [
+    {
+      question: "Taehyung's BT21 character Tata hails from which planet?",
+      options: [
+        "Planet TS",
+        "Planet BT",
+        "Planet Tata",
+        "Planet BTS",
+      ],
+      answer: 1
+    },
     {
       question: "Taehyung's song 'Sweet Night' is an OST from which kdrama? ",
       options: [
@@ -150,60 +190,68 @@ var questions = [
       ],
       answer: 1
     },
+    {
+      question: "Taehyung recently won an award for his OST Sweet night in which award show?",
+      options: [
+        "APAN Star awards ",
+        "Melon Music Awards",
+        "Soompi Awards ",
+        "Mnet Asia Music Awards ",
+      ],
+      answer: 0
+    },
   ],
   [
     {
-      question: "What is my name? ",
+      question: "Which of the following is NOT the name of one of Cooky's friends in BT21 universe?",
       options: [
-        "option1",
-        "option2",
-        "option3",
-        "option4",
+        "Chimmy",
+        "Shooky",
+        "Spooky",
+        "Jooky",
       ],
-      answer: "SHRADDHA"
-    },
-    {
-      question: "What is my age? ",
-      options: [
-        "option1",
-        "option2",
-        "option3",
-        "option4",
-      ],
-      answer: "20"
-    },
-    {
-      question: "Where do i live? ",
-      options: [
-        "option1",
-        "option2",
-        "option3",
-        "option4",
-      ],
-      answer: "NAGPUR"
-    },
-    {
-      question: "Do i have siblings? ",
-      options: [
-        "option1",
-        "option2",
-        "option3",
-        "option4",
-      ],
-      answer: "YES"
-    },
-    {
-      question: "What is my sibling's name? ",
-      options: [
-        "option1",
-        "option2",
-        "option3",
-        "option4",
-      ],
-      answer: "RAJAT"
+      answer: 2
     },
   ]
 ];
+
+var color = [
+  {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+  {
+    r: 191,
+    g: 9,
+    b: 232
+  },
+  {
+    r: 0,
+    g: 0,
+    b: 0
+  },
+]
 
 var highScore = [
   [
@@ -281,4 +329,4 @@ var highScore = [
 var members = ['Kim Namjoon', 'Kim Seokjin', 'Min Yoongi', 'Jung Hoseok', 'Park Jimin', 'Kim Taehyung', 'Jeon Jungkook'];
 
 
-module.exports = { questions, highScore, members };
+module.exports = { questions, highScore, members, color };

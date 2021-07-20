@@ -1,6 +1,6 @@
 const rL = require("readline-sync");
 const chalk = require("chalk");
-const { questions, highScore, members } = require("./data.js");
+const { questions, highScore, members, color } = require("./data.js");
 
 var score = 0, usrName = "", wrongAnswered = [];
 
@@ -15,9 +15,9 @@ function printRightAnswers() {
 }
 
 // print questions and checks answer
-function game(index, question, options, answer) {
+function game(index, question, options, answer, color) {
   console.log("\n--------------------------------------\n");
-  console.log(chalk.cyanBright(`${index + 1}. ${question}`));
+  console.log(chalk.rgb(color.r, color.g, color.b)(`${index + 1}. ${question}`));
   var usrAns = rL.keyInSelect(options, "Enter: ");
   if (usrAns === answer) {
     console.log(chalk.green("\nYayy! You got that one 🤩"));
@@ -40,7 +40,7 @@ function getName() {
 
 // start of program
 function quizStart() {
-  console.log(chalk.rgb(255, 236, 25).bgBlack.underline.bold("BTS Fan Quiz\n"));
+  console.log(chalk.rgb(191, 9, 232).underline.bold("BTS Fan Quiz\n"));
   console.log(chalk.rgb(255, 236, 25)("Here's a trivia about BTS, check if you know all the answer about your bias 😉\n\n"));
 
   while ((usrName = getName().trim()) === "")
@@ -59,7 +59,7 @@ function quizStart() {
   var usrBias = rL.keyInSelect(members, `Enter `);
 
   for (var i = 0; i < questions[usrBias].length; i++)
-    game(i, questions[usrBias][i].question, questions[usrBias][i].options, questions[usrBias][i].answer, score, wrongAnswered);
+    game(i, questions[usrBias][i].question, questions[usrBias][i].options, questions[usrBias][i].answer, color[usrBias]);
 
   console.log(chalk.rgb(255, 236, 25).bold(`\n\nYour final score is: ${score}\n\n`));
 
