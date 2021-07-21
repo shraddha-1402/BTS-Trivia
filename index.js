@@ -5,11 +5,11 @@ const { questions, highScore, members, color } = require("./data.js");
 var score = 0, usrName = "", wrongAnswered = [];
 
 // prints the coreect answer of all wrong aanswered questions
-function printRightAnswers() {
+function printRightAnswers(rgbCol) {
   if (wrongAnswered.length > 0) {
-    console.log("The correct answers for the questions you missed: \n");
+    console.log(chalk.rgb(255, 122, 20)("The correct answers for the questions you missed: \n"));
     wrongAnswered.forEach(e => {
-      console.log(`que: ${e.question}\nans: ${e.correctAns}\n\n`);
+      console.log((`que: ${chalk.rgb(rgbCol.r, rgbCol.g, rgbCol.b)(`${e.question}`)}\nans: ${chalk.rgb(rgbCol.r, rgbCol.g, rgbCol.b)(`${e.correctAns}`)}\n\n`));
     })
   }
 }
@@ -41,29 +41,33 @@ function getName() {
 // start of program
 function quizStart() {
   console.log(chalk.rgb(191, 9, 232).underline.bold("BTS Fan Quiz\n"));
-  console.log(chalk.rgb(255, 236, 25)("Here's a trivia about BTS, check if you know all the answer about your bias 😉\n\n"));
+  console.log(chalk.rgb(255, 239, 64)("Here's a trivia about BTS, check if you know all the answer about your bias 😉\n\n"));
 
   while ((usrName = getName().trim()) === "")
     console.log(chalk.red.bold("Please enter your name without blank space!\n"));
 
   console.log(chalk.cyanBright(`\n\nWelcome ${usrName} 😃\n\n`));
 
-  console.log(`Rules of the game:\n 
+  console.log(chalk.rgb(255, 239, 64)(`Rules of the game:\n 
 1. Choose your bias
 2. There are total 10 questions about each member
 3. For each correct answer you will get 2 points
 4. For each wrong answer 1 point will be deducted
-5. At the end scoreboard will be displayed`);
+5. At the end scoreboard will be displayed`));
 
   console.log(`\n\nWho's your bias?`);
   var usrBias = rL.keyInSelect(members, `Enter `);
 
+  if (usrBias === -1) {
+    console.log(chalk.redBright("You chose CANCEL. Ending the quiz!"));
+    process.exit();
+  }
   for (var i = 0; i < questions[usrBias].length; i++)
     game(i, questions[usrBias][i].question, questions[usrBias][i].options, questions[usrBias][i].answer, color[usrBias]);
 
   console.log(chalk.rgb(255, 236, 25).bold(`\n\nYour final score is: ${score}\n\n`));
 
-  printRightAnswers(wrongAnswered);
+  printRightAnswers(color[usrBias]);
 
   for (var i = 0; i < highScore[usrBias].length; i++) {
     if (score >= highScore[usrBias][i].score) {
@@ -83,7 +87,7 @@ function quizStart() {
   highScore[usrBias].forEach(e => {
     console.log(`${e.name}: ${e.score}`);
   });
-  console.log("\n\nThank you for taking the quiz ❤️❤️");
+  console.log(chalk.rgb(191, 9, 232)("\n\nThank you for taking the quiz ❤️❤️❤"));
 }
 
 do {
