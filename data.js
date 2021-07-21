@@ -21,7 +21,7 @@ var questions = [
       answer: 2
     },
     {
-      question: "What's Namjoon's native place? Or where is Namjoon from?",
+      question: "What's Namjoon's native place?",
       options: [
         "Seoul",
         "Ilsan",
@@ -61,6 +61,26 @@ var questions = [
         "Love yourself : Answer",
       ],
       answer: 3
+    },
+    {
+      question: "Which of the following is not one of Jin's solo songs?",
+      options: [
+        "Moon",
+        "Tonight",
+        "Abyss",
+        "Tomorrow",
+      ],
+      answer: 3
+    },
+    {
+      question: "Which of the following song is choreographed by Jin?",
+      options: [
+        "Moon",
+        "Tonight",
+        "Spine Breaker",
+        "Tomorrow",
+      ],
+      answer: 2
     },
   ],
   [
@@ -124,7 +144,17 @@ var questions = [
         "Gureum",
         "Mikey",
       ],
-      answer: "4"
+      answer: 3
+    },
+    {
+      question: "Where is Hobi from?",
+      options: [
+        "Seoul",
+        "Gwangju",
+        "Ilsan",
+        "Daegu",
+      ],
+      answer: 1
     },
   ],
   [
@@ -147,6 +177,16 @@ var questions = [
         "Neo Soul",
       ],
       answer: 1
+    },
+    {
+      question: "What dance style did Jimin learn pre-debut?",
+      options: [
+        "Contemporary dance",
+        "Ballet",
+        "Acro dance",
+        "Jazz dance",
+      ],
+      answer: 0
     },
   ],
   [
@@ -196,6 +236,16 @@ var questions = [
         "APAN Star awards ",
         "Melon Music Awards",
         "Soompi Awards ",
+        "Mnet Asia Music Awards ",
+      ],
+      answer: 0
+    },
+    {
+      question: "Who did Taehyung collab with in Snow Flower?",
+      options: [
+        "APAN Star awards ",
+        "Lauv",
+        "Peak Boy",
         "Mnet Asia Music Awards ",
       ],
       answer: 0
@@ -267,11 +317,11 @@ var highScore = [
   [
     {
       name: "Shraddha",
-      score: 18
+      score: 6
     },
     {
       name: "Keith",
-      score: 9
+      score: 2
     }
   ],
   [
